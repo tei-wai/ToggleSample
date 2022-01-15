@@ -15,7 +15,7 @@ public class LayoutToggles : MonoBehaviour
 
             Sprite newSprite = Resources.Load<Sprite>("Images/"+ i.ToString());
             
-            item.GetComponentInChildren<Image>().sprite = newSprite;
+            item.GetComponentInChildren<ToggleWithImage>().SetSprite(newSprite);
         } 
     }
 }
